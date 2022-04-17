@@ -16,6 +16,6 @@ class Userseeder extends Seeder
     public function run()
     {
         // $objDB=new DB();
-        DB::table('user')->insert(['name'=>'mukti','email'=>'muktinsrc11@gmail.com','password'=>Hash::make("abc@123")]);
+        DB::table('users')->insert(['name'=>'mukti','email'=>'muktinsrc11@gmail.com','password'=>Hash::make("abc@123")]);
     }
 }
