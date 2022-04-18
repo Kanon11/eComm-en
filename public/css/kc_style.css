@@ -2,3 +2,12 @@
     height: 500px;
     padding-top: 100px;
 }
+.custom-product{
+    height: 600px;
+}
+.slider-img{
+    height: 400px !important;
+}
+.slider-text{
+    background-color:#60788d;
+}

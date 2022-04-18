@@ -13,9 +13,7 @@
 
 <body>
     {{ View::make('header') }}
-    <div class="container">
         @yield('content')
-    </div>
     {{ View::make('footer') }}
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
     <script src="{{ URL::asset('js/kc_script.js') }}"></script>
