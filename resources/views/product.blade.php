@@ -10,12 +10,14 @@
             <div class="carousel-inner">
                 @foreach ($products as $item)
                     <div class="carousel-item {{ $item['id'] == 1 ? 'active' : '' }}">
-                        <img class="d-block w-100 slider-img" src="{{ $item['gallery'] }}" >
-                        <div class="carousel-caption d-none d-md-block slider-text">
-                            <p>Name: {{ $item['name'] }}</p>
-                            <h5>{{ $item['description'] }}</h5>
-                            <p>Price: {{ $item['price'] }}</p>
-                        </div>
+                        <a href="/detail/{{ $item['id'] }}">
+                            <img class="d-block w-100 slider-img" src="{{ $item['gallery'] }}">
+                            <div class="carousel-caption d-none d-md-block slider-text">
+                                <p>Name: {{ $item['name'] }}</p>
+                                <h5>{{ $item['description'] }}</h5>
+                                <p>Price: {{ $item['price'] }}</p>
+                            </div>
+                        </a>
                     </div>
                 @endforeach
             </div>
@@ -27,6 +29,20 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+
+        </div>
+        <div class="trending-wrapper">
+            <h3>Trending Products</h3>
+            @foreach ($products as $item)
+                <a href="/detail/{{ $item['id'] }}">
+                    <div class="trending-item">
+                        <img class="trending-img" src="{{ $item['gallery'] }}">
+                        <div class="">
+                            <p>Name: {{ $item['name'] }}</p>
+                        </div>
+                    </div>
+                </a>
+            @endforeach
         </div>
     </div>
 @endsection

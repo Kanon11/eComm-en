@@ -3,11 +3,37 @@
     padding-top: 100px;
 }
 .custom-product{
-    height: 600px;
+    height: 900px;
 }
 .slider-img{
     height: 400px !important;
 }
 .slider-text{
     background-color:#60788d;
+}
+.trending-img{
+    height: 100px;
+}
+.trending-item{
+    float: left;
+    width: 14%;
+}
+.trending-wrapper{
+    margin: 30px;
+}
+.serch-wrapper{
+    margin: 30px;
+    float: middle;
+}
+.detail-img{
+    height: 200px;
+}
+.detail{
+    height: 600px;
+}
+.search-box{
+    width: 500px !important;
+}
+.search-img{
+    height: 200px;
 }
