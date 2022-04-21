@@ -29,7 +29,7 @@ if (Session::has('user')) {
             </form>
         </ul>
         <ul class="form-inline my-2 my-lg-0">
-            <a class="nav-link" href="#">Chart({{ $t_c }})</a>
+            <a class="nav-link" href="/cart-list">Chart({{ $t_c }})</a>
         </ul>
         @if (Session::has('user'))
             <ul class="navbar-nav mr-auto">
