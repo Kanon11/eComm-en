@@ -33,3 +33,6 @@ Route::get('/search',[ProductController::class,'search']);
 Route::post('/add-to-cart',[ProductController::class,'AddToCart']);
 Route::get('/cart-list',[ProductController::class,'getCartList']);
 Route::get('/remove-from-cart/{id}',[ProductController::class, 'Remove_from_cart']);
+Route::get('/ordernow',[ProductController::class,'OrderNow']);
+Route::post('/place-order',[ProductController::class,'PlaceOrder']);
+Route::get('/order-list',[ProductController::class,'getOrderList']);

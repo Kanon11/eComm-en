@@ -20,7 +20,7 @@ if (Session::has('user')) {
                 <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Orders</a>
+                <a class="nav-link" href="/order-list">Orders</a>
             </li>
             <form class="form-inline my-2 my-lg-0" action="/search">
                 <input class="form-control mr-sm-2 search-box" type="search" name="query" placeholder="Search"
