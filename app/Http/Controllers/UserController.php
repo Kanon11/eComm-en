@@ -29,7 +29,7 @@ class UserController extends Controller
         return view('register');
     }
     public function postregister(Request $req)
-    {
+    {//admin
         $user=new User();
         $user->name=$req->input('name');
         $user->email=$req->input('email');
