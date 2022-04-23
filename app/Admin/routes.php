@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Routing\Router;
 
 Admin::routes();
@@ -12,5 +13,9 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('home');
+    $router->resource('/products',AdminProductController::class);
+    $router->resource('/users',AdminUserController::class);
+    $router->resource('/orders',OrderController::class);
+    $router->resource('/carts',CartController::class);
 
 });
