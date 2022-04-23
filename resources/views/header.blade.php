@@ -42,19 +42,24 @@ if (Session::has('user')) {
                         <a class="dropdown-item" href="/logout">Log Out</a>
                     </div>
                 </li>
-            @else
-                <ul class="navbar-nav mr-auto">
+            </ul>
+        @else
+            <ul class="navbar-nav mr-auto">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Not Loged In
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/login">Log In</a>
-                        </div>
-                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Not Loged In
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/login">Log In</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/register">Registration</a>
+                </li>
+            </ul>
         @endif
-        </ul>
+
 
 </nav>

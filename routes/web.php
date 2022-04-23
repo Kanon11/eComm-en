@@ -24,8 +24,10 @@ Route::get('/logout',function ()
     if(Session ::has('user')){
         Session::forget('user');
     }
-    return view('/login');
+    return redirect('/login');
 });
+Route::get('/register',[UserController::class,'register']);
+Route::post('/register',[UserController::class,'postregister']);
 Route::post('/login',[UserController::class,'login']);
 Route::get('/',[ProductController::class,'index']);
 Route::get('/detail/{id}',[ProductController::class,'details']);
